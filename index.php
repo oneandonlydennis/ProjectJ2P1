@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Fietsenwinkel</title>
+    <title>Jean Center</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <div class="container">
-      <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #121212;">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+  <div id="container">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+          <a class="navbar-brand" href="#"><img src="./img/JeanCenterInvertBlue.png" height="100" alt="logo"></a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -43,13 +43,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                  <img src="img/#" alt="First slide">
+                  <img src="./img/Scherm Ontwerp.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                  <img src="img/#" alt="Second slide">
+                  <img src="./img/Scherm Ontwerp.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                  <img src="img/#" alt="Third slide">
+                  <img src="./img/Scherm Ontwerp.jpg" alt="Third slide">
               </div>
           </div>
           <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
