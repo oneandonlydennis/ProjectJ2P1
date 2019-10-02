@@ -55,10 +55,10 @@
                   <img class="lock img-fluid" src="./img/Scherm Ontwerp.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                  <img class="lock img-fluid" src="./img/Scherm Ontwerp.jpg" alt="Second slide">
+                  <img class="lock img-fluid" src="./img/NavCustomer.png" alt="Second slide">
               </div>
               <div class="carousel-item">
-                  <img class="lock img-fluid" src="./img/Scherm Ontwerp.jpg" alt="Third slide">
+                  <img class="lock img-fluid" src="./img/NavAdmin.png" alt="Third slide">
               </div>
           </div>
           <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
