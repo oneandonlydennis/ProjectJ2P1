@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
+
   <body>
   <div id="container">
       <nav class="navbar navbar-expand-sm navbar-dark">
-          <a class="navbar-brand" href="#"><img src="./img/JeanCenterInvertBlue.png" height="100" alt="logo"></a>
+          <a class="navbar-brand" href="#">
+              <img src="./img/JeanCenterInvertBlue.png" height="100" alt="logo">
+          </a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation"></button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -33,8 +37,8 @@
               </ul>
           </div>
       </nav>
-      <div class="divider">  
-      </div>
+
+
       <div id="carouselId" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
               <li data-target="#carouselId" data-slide-to="0" class="active"></li>
@@ -62,6 +66,8 @@
           </a>
       </div>
     </div>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

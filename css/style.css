@@ -3,7 +3,9 @@
 }
 
 body {
-    background-color: lightgrey}
+    background-color: lightgrey;
+    overflow-x: hidden;
+}
 
 .divider {
     height: 3vh;
