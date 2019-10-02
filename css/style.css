@@ -56,6 +56,10 @@ body {
     margin-bottom: 15px;
 }
 
+.container {
+    text-align: center;
+}
+
 /* colour codes
 
 rgb(40,62,99)
