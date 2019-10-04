@@ -60,6 +60,16 @@ body {
     text-align: center;
 }
 
+.signupform{
+    width: 100vw;
+    /*background: red;*/
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40%;
+}
+
 /* colour codes
 
 rgb(40,62,99)

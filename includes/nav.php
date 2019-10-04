@@ -16,8 +16,8 @@
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inloggen</a>
                       <div class="dropdown-menu" aria-labelledby="dropdownId">
-                          <a class="dropdown-item" href="#">Inloggen</a>
-                          <a class="dropdown-item" href="#">Registreren</a>
+                          <a class="dropdown-item" href="./index.php?content=signin">Inloggen</a>
+                          <a class="dropdown-item" href="./index.php?content=signup">Registreren</a>
                       </div>
                   </li>
               </ul>
