@@ -1,5 +1,6 @@
 * {
     font-family: Garamond;
+    font-size: 20px;
 }
 
 body {
@@ -69,6 +70,7 @@ body {
     flex-direction: column;
     padding: 0 40%;
 }
+
 
 /* colour codes
 
