@@ -23,6 +23,7 @@ body {
 
 .nav-link {
     margin-left: 50px;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -76,6 +77,16 @@ body {
     width: 100vw;
 }
 
+.name{
+    color: rgba(255,255,255,0.5);
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.name:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
 /* colour codes
 
 rgb(40,62,99)

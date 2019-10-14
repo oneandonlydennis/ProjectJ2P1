@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="nav" class="row">
         <!-- import van de navbar -->
         <?php include("./includes/nav.php"); ?>
     </div>

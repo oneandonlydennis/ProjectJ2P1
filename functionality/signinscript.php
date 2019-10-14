@@ -25,7 +25,7 @@
       switch ($record["userrole"]) {
         case 'user':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd en word nu doorgestuurd naar de hoofdpagina.</div>';      
-          header("Location: ../index.php?content=logboek");
+          header("Location: ../index.php?content=home");
         break;
         case 'admin':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
@@ -45,13 +45,13 @@
 
     } else {
       // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
+      header("Location: ../index.php?content=signin");
       echo '<div class="alert alert-danger" role="alert">Uw wachtwoord is niet correct, probeer het nogmaals</div>';
-      header("Location: ../index.php?content=contact");
     }
 
   } else {
     // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
     echo '<div class="alert alert-danger" role="alert">E-mail is niet bekend, probeer het nogmaals</div>';
-    header("Location: ../index.php?content=signup");
+    header("Location: ../index.php?content=signin");
   }
 ?>
