@@ -1,10 +1,9 @@
 <?php
   // Hier worden constanten gedefinieerd. Een constante kun je niet veranderen.
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "jeancenter";
+  $dsn = 'mysql:dbname=jeancenter;host=localhost;charset=UTF8';
+  $user = 'root';
+  $pass = '';
 
   // We maken contact met de database
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  $conn = new PDO($dsn, $user, $pass);
 ?>

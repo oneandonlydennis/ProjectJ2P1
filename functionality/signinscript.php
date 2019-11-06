@@ -23,20 +23,20 @@
       $_SESSION["userrole"] = $record["userrole"];
 
       switch ($record["userrole"]) {
-        case 'user':
+        case 'gebruiker':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd en word nu doorgestuurd naar de hoofdpagina.</div>';      
-          header("Location: ../index.php?content=home");
+          header("Location: ../index.php?content=webshop");
         break;
         case 'admin':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
-          header("Location: ../index.php?content=home");
+          header("Location: ../index.php?content=adminpanel");
         break;
         case 'owner':
         echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
-          header("Location: ../index.php?content=home");
+          header("Location: ../index.php?content=ownerpanel");
         default:
           echo '<div class="alert alert-warning" role="alert">U bent succesvol ingelogd. Maar uw gebruikersrol bestaat niet. Uwordt doorgestuurd naar de standaard homepagina</div>';      
-          header("Location: ../index.php?content=home");
+          header("Location: ../index.php?content=webshop");
         break;
       }
 

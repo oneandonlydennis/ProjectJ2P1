@@ -13,12 +13,9 @@
 if(isset($_SESSION['id'])){
     switch($_SESSION['userrole']){
         case 'customer':
-        /*TODO: fix de positie van de username*/
-        echo "<li class='nav-item'>
-            <a class='name' href='#'>Hallo ". $_SESSION['username']."</a>
-        </li>
+        echo "
         <li class='nav-item'>
-            <a class='nav-link' href='index.php'>Webshops</a>
+            <a class='nav-link active' href='index.php?content=webshop'>Webshops</a>
         </li>
         <li class='nav-item'>
             <a class='nav-link' href='index.php?content=contact'>Contact</a>
@@ -36,7 +33,7 @@ if(isset($_SESSION['id'])){
 }else{
     echo '
         <li class="nav-item">
-            <a class="nav-link" href="index.php">Webshop <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php?content=webshop">Webshop <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="index.php?content=contact">Contact</a>
