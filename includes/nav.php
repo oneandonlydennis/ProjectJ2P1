@@ -1,6 +1,6 @@
 <div id="container">
       <nav class="navbar navbar-expand-sm navbar-dark">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.php?content=home">
               <img src="./img/JeanCenterInvertBlue.png" height="100" alt="logo">
           </a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -24,6 +24,10 @@ if(isset($_SESSION['id'])){
             <a class='nav-link' href='index.php?content=logout'>
             Uitloggen
             </a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href='index.php?content=profile'>Profiel</a>
+        </li>
         ";
           break;
           default:

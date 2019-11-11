@@ -21,10 +21,10 @@
       $_SESSION["username"] = $username;
       $_SESSION["userrole"] = $record[0]["userrole"];
 
-      switch ($record["userrole"]) {
-        case 'gebruiker':
+      switch ($record[0]["userrole"]) {
+        case 'customer':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd en word nu doorgestuurd naar de hoofdpagina.</div>';      
-          header("Location: ../index.php?content=webshop");
+          header("Location: ../index.php?content=profile");
         break;
         case 'admin':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
