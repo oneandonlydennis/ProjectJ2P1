@@ -15,7 +15,7 @@
         href="index.php?content=product&id='.$row["artikelID"].'" role="button">Bekijk product</a>
         </div>
         <div class="col-6">
-        <img src="./img/JeanCenter.png">
+        <img src="./img/pantsproduct'.$row["artikelID"].'.png" alt="pantsproduct'.$row["artikelID"].'.png">
         </div>
         </div>
     ';

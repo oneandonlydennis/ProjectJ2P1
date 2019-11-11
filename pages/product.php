@@ -27,8 +27,3 @@ $product = $result->fetchAll();
 
 
 </div>
-<!--
-echo $product[0]["description"];
-echo $product[0]["price"];
-echo $product[0]["size"];
-echo $product[0]["amount"]; -->
