@@ -77,6 +77,12 @@ body {
     width: 100vw;
 }
 
+.articlerow{
+    background: white;
+    border: 15px solid lightgrey;
+    padding: 0 1.3em;
+}
+
 .name{
     color: rgba(255,255,255,0.5);
     margin-left: 50px;

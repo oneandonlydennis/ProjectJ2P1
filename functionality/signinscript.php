@@ -17,9 +17,9 @@
 
     if ( password_verify($password, $blowfish_password)) {
       
-      $_SESSION["id"] = $record["accountID"];
+      $_SESSION["id"] = $record[0]["accountID"];
       $_SESSION["username"] = $username;
-      $_SESSION["userrole"] = $record["userrole"];
+      $_SESSION["userrole"] = $record[0]["userrole"];
 
       switch ($record["userrole"]) {
         case 'gebruiker':
