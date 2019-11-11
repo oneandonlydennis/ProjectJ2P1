@@ -11,6 +11,8 @@
         <p>€'.$row["price"].'</p>
         <p>Beschikbaar: '.$row["amount"].'</p>
         <p>Maat: '.$row["size"].'</p>
+        <p> <a name="product" id="product" class="btn btn-primary" 
+        href="index.php?content=product&id='.$row["artikelID"].'" role="button">Bekijk product</a>
         </div>
         <div class="col-6">
         <img src="./img/JeanCenter.png">
