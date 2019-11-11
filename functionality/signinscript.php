@@ -3,18 +3,17 @@
   include("./functions.php");
   session_start();
 
-  $username = sanitize($_POST["username"]);
-  $password = sanitize($_POST["password"]);
+  $username = $_POST["username"];
+  $password = $_POST["password"];
 
   $sql = "SELECT * FROM  `account` WHERE `username` = '$username'";
 
-  $result = mysqli_query($conn, $sql);
+  $result = $conn->query($sql);
 
-  if ( mysqli_num_rows($result) == 1 ) {
+  if ( $result->rowCount() == 1 ) {
     // Ga verder met de inlogprocedure
-    $record = mysqli_fetch_assoc($result);
-
-    $blowfish_password = $record["password"];
+    $record = $result->fetchAll();
+    $blowfish_password = $record[0]["password"];
 
     if ( password_verify($password, $blowfish_password)) {
       
@@ -45,13 +44,13 @@
 
     } else {
       // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
-      header("Location: ../index.php?content=signin");
+      header("Location: ../index.php?content=contact");
       echo '<div class="alert alert-danger" role="alert">Uw wachtwoord is niet correct, probeer het nogmaals</div>';
     }
 
   } else {
     // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
     echo '<div class="alert alert-danger" role="alert">E-mail is niet bekend, probeer het nogmaals</div>';
-    header("Location: ../index.php?content=signin");
+    header("Location: ../index.php?content=home");
   }
 ?>

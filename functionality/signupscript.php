@@ -2,8 +2,8 @@
   include("db.php");
   include("functions.php");
 
-  $email = sanitize($_POST["email"]);
-  $username = sanitize($_POST["username"]);
+  $email = $_POST["email"];
+  $username = $_POST["username"];
 
   if ( empty($_POST["email"])) {
     echo '<div class="alert alert-warning" role="alert">U heeft geen e-mailadres ingevoerd. Dit is een verplicht veld. Probeer het nogmaals</div>';
@@ -13,14 +13,14 @@
 
     $sql = "SELECT * FROM `account` WHERE `email` = '$email'";
 
-    $result = mysqli_query($conn, $sql);
+    $result = $conn->query($sql);
 
-    if ( mysqli_num_rows($result) == 1 ) {
+    if ( $result->rowCount() == 1 ) {
       echo '<div class="alert alert-info" role="alert">Het door u ingevoerde e-mailadres bestaat al. Kies een nieuw e-mailadres</div>';
     } else {
 
-      $password = sanitize($_POST["password"]);
-      $password2 = sanitize($_POST["password2"]);
+      $password = $_POST["password"];
+      $password2 = $_POST["password2"];
 
       $pw = password_hash($password, PASSWORD_BCRYPT);
     if($password != $password2){
@@ -39,9 +39,9 @@
                                 'no',
                                 'customer')";
 
-      $result = mysqli_query($conn, $sql);
+      $result = $conn->query($sql);
 
-      $id = mysqli_insert_id($conn);
+      $id = $conn->LastInsertId();
     }
       if ($result) {
         $to = $email;
