@@ -1,6 +1,5 @@
 <?php
     require_once("./functionality/db.php");
-    var_dump($_SESSION);
     $sql = 'SELECT * FROM artikel';
     echo "<div class='row'>";
     foreach($conn->query($sql) as $row){
