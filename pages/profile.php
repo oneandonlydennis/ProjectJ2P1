@@ -11,7 +11,6 @@
         }
     </style>
 </head>
-
 <div class="container">
     <h2>Welkom <?php echo $_SESSION['username']?></h2>
     <p>Hier kan je je profiel aanpassen, account opzeggen, of reserveringen bekijken!</p>

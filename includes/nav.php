@@ -15,7 +15,7 @@ if(isset($_SESSION['id'])){
         case 'customer':
         echo "
         <li class='nav-item'>
-            <a class='nav-link active' href='index.php?content=webshop'>Webshops</a>
+            <a class='nav-link active' href='index.php?content=webshop'>Webshop</a>
         </li>
         <li class='nav-item'>
             <a class='nav-link' href='index.php?content=contact'>Contact</a>
