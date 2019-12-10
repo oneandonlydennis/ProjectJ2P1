@@ -21,29 +21,3 @@
     }
     echo "</div>";
 ?>
-
-    <!-- <?php
-            $sql = "SELECT * FROM products WHERE catagory = 'heren' AND subcatagory = 'schoenen';";
-            $result = mysqli_query($conn, $sql);
-            $resultCheck = mysqli_num_rows($result);
-
-            if ($resultCheck > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                   // echo $row['title'] . "<br>";
-                
-                   echo '
-                   <div class="row topmargin">
-                     <div class="col-sm">
-                           <div class="card" style="width: 22rem;">
-                            <img src="' . $row['imageUrl'] . '" class="card-img-top product-img" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">' . $row['title'] . '</h5>
-                                    <a href="index.php?content=product&id=' . $row['id'] . '" class="btn btn-secondary">View</a>
-                                </div>
-                          </div> 
-                     </div>
-                   </div>
-                    ';
-                }
-            }
-        ?> -->

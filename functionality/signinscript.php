@@ -44,7 +44,7 @@
 
     } else {
       // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
-      header("Location: ../index.php?content=contact");
+      header("Location: ../index.php?content=signin");
       echo '<div class="alert alert-danger" role="alert">Uw wachtwoord is niet correct, probeer het nogmaals</div>';
     }
 
