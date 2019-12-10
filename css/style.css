@@ -88,9 +88,10 @@ body {
 }
 
 .articlerow{
-    background: white;
+    background: black; 
     border: 15px solid lightgrey;
     padding: 0 1.3em;
+    border-radius: 1rem;
 }
 
 .name{
