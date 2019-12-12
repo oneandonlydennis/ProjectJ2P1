@@ -30,6 +30,22 @@ if(isset($_SESSION['id'])){
         </li>
         ";
           break;
+        case 'manager':
+            echo "<li class='nav-item'>
+            <a class='nav-link active' href='index.php?content=webshop'>Webshop</a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href='index.php?content=additem'>Voeg product toe</a>
+        </li>
+        <li class='logout'> 
+            <a class='nav-link' href='index.php?content=logout'>
+            Uitloggen
+            </a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href='index.php?content=managerprofile'>Profiel</a>
+        </li>";
+          break;
           default:
           echo "test";
           break;
