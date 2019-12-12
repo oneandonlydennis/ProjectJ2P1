@@ -7,7 +7,7 @@ $result = $conn->query($sql);
 $product = $result->fetchAll();
 ?>
 
-<div class="productcontainer">
+<!-- <div class="productcontainer"> -->
 <div class="row">
     <div class="col-6">
         <img src="./img/JeanCenter.png" alt="temporary image">
