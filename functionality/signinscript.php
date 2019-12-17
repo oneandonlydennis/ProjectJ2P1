@@ -28,7 +28,7 @@
         break;
         case 'manager':
           echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
-          header("Location: ../index.php?content=adminpanel");
+          header("Location: ../index.php?content=managerprofile");
         break;
         case 'owner':
         echo '<div class="alert alert-success" role="alert">U bent succesvol ingelogd. U wordt doorgestuurd naar uw administrator homepagina</div>';      
@@ -43,14 +43,14 @@
 
 
     } else {
-      // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
+      // wachtwoord verkeerd
+      $_SESSION['errormsg'] = '<div class="alert alert-danger" role="alert">Uw wachtwoord is niet correct, probeer het nogmaals</div>';
       header("Location: ../index.php?content=signin");
-      '<form method="post"><input type="hidden" name="errormsg" value=\'<div class="alert alert-danger" role="alert">Uw wachtwoord is niet correct, probeer het nogmaals</div>\'>';
     }
 
   } else {
     // E-mailadres is niet bekend in database, terugsturen naar het inlogformulier
-    echo '<div class="alert alert-danger" role="alert">E-mail is niet bekend, probeer het nogmaals</div>';
-    header("Location: ../index.php?content=home");
+    $_SESSION['errormsg'] = '<div class="alert alert-danger" role="alert">gebruikersnaam is niet bekend, probeer het nogmaals</div>';
+    header("Location: ../index.php?content=signin");
   }
 ?>

@@ -22,8 +22,21 @@ $product = $result->fetchAll();
         <h2>Op voorraad</h2>
         <p><?php echo $product[0]["amount"];?></p>
 
-        <button type="button" name="order" id="order" 
+        <form action="./functionality/addtocart.php" method="post">
+            <label for="amount">Hoeveelheid:</label>
+            <select name="amount" id="amount">
+                <?php
+                for($i=0;$i<$product[0]["amount"]; $i++){
+                    $y = $i+1;
+                    echo '<option value="' . $y .'">' . $y .'</option>';
+                }
+                ?>
+            </select>
+            <input type="hidden" name="id" value="<?php echo $id ?>">
+            <input type="hidden" name="account" value="<?php echo $_SESSION['id']?>">
+        <button type="submit" name="order" id="order"
         class="btn btn-primary" btn-lg btn-block">Bestellen</button>
+        </form>
 
 
 </div>

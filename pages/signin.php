@@ -1,4 +1,16 @@
 <form action="./functionality/signinscript.php" method="post" class="signupform">
+    <?php
+    if(isset($_SESSION['errormsg'])) {
+        $errormsg = $_SESSION['errormsg'];
+    }
+    else{
+        $errormsg = "";
+    }
+    echo $errormsg;
+    if(isset($_SESSION['errormsg'])){
+        unset($_SESSION['errormsg']);
+    }
+    ?>
     <div class="form-group">
         <label for="username">Gebruikersnaam</label>
         <input type="text" name="username" class="form-control" id="username" placeholder="Example input">
