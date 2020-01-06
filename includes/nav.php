@@ -28,6 +28,9 @@ if(isset($_SESSION['id'])){
         <li class='nav-item'>
             <a class='nav-link' href='index.php?content=profile'>Profiel</a>
         </li>
+        <li class='nav-item'>
+            <a class='nav-link' href='index.php?content=oversight'>winkelwagen</a>
+        </li>
         ";
           break;
         case 'manager':
@@ -44,6 +47,9 @@ if(isset($_SESSION['id'])){
         </li>
         <li class='nav-item'>
             <a class='nav-link' href='index.php?content=managerprofile'>Profiel</a>
+        </li>
+        <li class='nav-item'>
+            <a class='nav-link' href='index.php?content=oversight'>winkelwagen</a>
         </li>";
           break;
           default:

@@ -106,6 +106,10 @@ body {
     color: rgba(255,255,255,0.5);
 }
 
+.right{
+    right: 0;
+}
+
 /* colour codes
 
 rgb(40,62,99)

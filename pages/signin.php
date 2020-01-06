@@ -21,6 +21,3 @@
     </div>
     <button type="submit" class="btn btn-primary">Log in!</button>
 </form>
-<form action="index.php?content=lostpass" method="post" class="signupform">
-<button typ="submit" class="btn btn-primary">Wachtwoord vergeten? Klik hier.</button>
-    </form>
