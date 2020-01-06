@@ -35,7 +35,7 @@ $product = $result->fetchAll();
             <input type="hidden" name="id" value="<?php echo $id ?>">
             <input type="hidden" name="account" value="<?php echo $_SESSION['id']?>">
         <button type="submit" name="order" id="order"
-        class="btn btn-primary" btn-lg btn-block">Bestellen</button>
+        class="btn btn-dark" btn-lg btn-block">Bestellen</button>
         </form>
 
 
