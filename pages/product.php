@@ -32,10 +32,16 @@ $product = $result->fetchAll();
                 }
                 ?>
             </select>
-            <input type="hidden" name="id" value="<?php echo $id ?>">
-            <input type="hidden" name="account" value="<?php echo $_SESSION['id']?>">
+            <?php if(isset($_SESSION['id'])){
+            echo '<input type="hidden" name="id" value="'.$id.'">
+            <input type="hidden" name="account" value="'.$_SESSION['id'].'">
         <button type="submit" name="order" id="order"
-        class="btn btn-dark" btn-lg btn-block">Bestellen</button>
+        class="btn btn-dark" btn-lg btn-block">Bestellen</button>';
+            }
+            else{
+                echo '<button type="submit" disabled name="order" id="order"
+        class="btn btn-dark" btn-lg btn-block">Bestellen</button>';
+            }?>
         </form>
 
 
