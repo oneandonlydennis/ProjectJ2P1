@@ -21,7 +21,8 @@ $sql = "DELETE FROM bestelling WHERE accountID = $accountid";
 $result = $conn->query($sql);
 if($result){
     echo "bestelling gelukt!";
+    header("Location: http://www.ing.nl");
 }
 else{
-    echo "fout";
+    Header("Location: ../index.php?content=oversight");
 }
